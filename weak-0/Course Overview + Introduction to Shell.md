@@ -8,6 +8,21 @@ Eg:- If we have bash script in current directory we run by `./script.sh` and `.`
 We can also  add some path in this variable permanently through `.bashrc` in bash shell (**Bourne Again Shell**). `export $PATH:/home`
 
 ---
+**`sed`:**
+`sed`, which is a programmatic file editor.
+```
+sed -i 's/pattern/replacement/g' file
+```
+This replaces all instances of `pattern` with `replacement` in `file`
 
+---
+**`awk`:**
+Where `sed` is built for editing files, `awk` is built for parsing them.
+```
+ awk '{print $2}' file
+```
+Prints the second whitespace-separated column of every line of `file`.
+
+---
 [[Some Fundamentals]]
 

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "weak-0/Command Line Environment.md",
+                "file": "weak-0/Version Control and Git.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Command Line Environment"
+              "title": "Version Control and Git"
             }
           }
         ]
@@ -189,12 +189,12 @@
   },
   "active": "ac165853066fda08",
   "lastOpenFiles": [
+    "weak-0/Development Environment and Tools.md",
     "weak-0/Version Control and Git.md",
+    "weak-0/Command Line Environment.md",
+    "weak-0/Course Overview + Introduction to Shell.md",
     "weak-0/Some Fundamentals.md",
     "weak-0/Setup environment.md",
-    "weak-0/Development Environment and Tools.md",
-    "weak-0/Course Overview + Introduction to Shell.md",
-    "weak-0/Command Line Environment.md",
     "Untitled.canvas",
     "README.md",
     "Untitled.md",
