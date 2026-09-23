@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "weak-1/Wargames(Bandit).md",
+                "file": "weak-0/Some Fundamentals.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Wargames(Bandit)"
+              "title": "Some Fundamentals"
             }
           }
         ]
@@ -84,7 +84,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 290.5
   },
   "right": {
     "id": "91d784543d9b7356",
@@ -189,16 +189,17 @@
   },
   "active": "ac165853066fda08",
   "lastOpenFiles": [
-    "README.md",
-    "weak-1/Wargames(Bandit).md",
-    "o.md",
-    "weak-1",
+    "weak-1/Wargames(Bandit 11-20).md",
+    "weak-1/Wargames(Bandit 0-10).md",
+    "weak-0/Setup environment.md",
+    "weak-0/Some Fundamentals.md",
     "weak-0/Version Control and Git.md",
     "weak-0/Development Environment and Tools.md",
-    "weak-0/Command Line Environment.md",
     "weak-0/Course Overview + Introduction to Shell.md",
-    "weak-0/Some Fundamentals.md",
-    "weak-0/Setup environment.md",
+    "weak-0/Command Line Environment.md",
+    "README.md",
+    "o.md",
+    "weak-1",
     "Untitled.canvas",
     "weak-0/Setup.md",
     "weak-0/MIT missing semester.md",

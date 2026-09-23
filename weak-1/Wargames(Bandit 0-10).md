@@ -1,4 +1,5 @@
 https://overthewire.org/wargames/bandit/
+
 ---
 ## lever 0
 
@@ -148,15 +149,3 @@ The password for the next level is stored in the file **data.txt**, which contai
 - `base64 -d data.txt` : got password `pYfOY6HwUsDj5rL9UvyhU7MCmv8vN5Ro`
 
 ---
-## level 11 ---> level 12
-
-**Level Goal:**
-The password for the next level is stored in the file **data.txt**, where all lowercase (a-z) and uppercase (A-Z) letters have been rotated by 13 positions.
-
-**Solution:**
-- `ssh bandit11@51.20.162.29 -p 2220` : password is `pYfOY6HwUsDj5rL9UvyhU7MCmv8vN5Ro`
-- `ls` : got required file `data.txt`
-- `cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'` : got password `GROozWPO8QyN0mGrjUkID0WCYkZiQxrN`
-
----
-
