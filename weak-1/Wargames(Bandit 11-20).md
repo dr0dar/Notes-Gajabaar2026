@@ -1,6 +1,17 @@
 https://overthewire.org/wargames/bandit/
 
 ---
+## level 10 ---> level 11
+
+**Level Goal:**
+The password for the next level is stored in the file **data.txt**, which contains base64 encoded data.
+
+**Solution:**
+- `ssh bandit10@51.20.162.29 -p 2220` : password is `B0s2khmbT9u0geKuOoVGW3JZKhndE3BG`
+- `ls` : got required file `data.txt`
+- `base64 -d data.txt` : got password `pYfOY6HwUsDj5rL9UvyhU7MCmv8vN5Ro`
+
+---
 ## level 11 ---> level 12
 
 **Level Goal:**
@@ -204,26 +215,4 @@ To gain access to the next level, you should use the setuid binary in the homedi
 - `./bandit20-do cat /etc/bandit_pass/bandit20` : got next level password `4pIjcunZ0fK2vmp3IwfG8Vf7VhxD6pOA`.
 
 ---
-## level 20 ---> level 21
-
-**Level Goal:**
-There is a setuid binary in the homedirectory that does the following: it makes a connection to localhost on the port you specify as a commandline argument. It then reads a line of text from the connection and compares it to the password in the previous level (bandit20). If the password is correct, it will transmit the password for the next level (bandit21).
-
-**NOTE:** Try connecting to your own network daemon to see if it works as you think
-
-**Solution:**
-- `ssh bandit20@51.20.162.29 -p 2220`  : password is `4pIjcunZ0fK2vmp3IwfG8Vf7VhxD6pOA`
-- `tmux` : enter to terminal multiplixer
-- presss Ctrl+b and release  and type `"` it split into two panels. 
-
-- In bottom  panel, `echo "4pIjcunZ0fK2vmp3IwfG8Vf7VhxD6pOA" | nc -l 2040` : it start listing to port 2040 and if anything connects it sends password in echo.
-- **leave the command running** and press Ctrl+b and release and press upper arrow, it moves to top panel.
-
-- In top panel, `./suconnect 2040`
-- Now here basically `./suconnect` connect to 2040 port and check for any data comming, if comming matches with bandit20 password. If true send bandti21 password. 
-
-- Now look at the bottom panel where we listning to port 2040 : we got password to next level `bW9kBv5WC3P4yoDyf12LSdGuNz5ka6hY`
-
----
-
 [[Wargames(Bandit 0-10)]]

@@ -138,14 +138,4 @@ The password for the next level is stored in the file **data.txt** in one of t
 - `strings data.txt` : got password `B0s2khmbT9u0geKuOoVGW3JZKhndE3BG`
 
 ---
-## level 10 ---> level 11
 
-**Level Goal:**
-The password for the next level is stored in the file **data.txt**, which contains base64 encoded data.
-
-**Solution:**
-- `ssh bandit10@51.20.162.29 -p 2220` : password is `B0s2khmbT9u0geKuOoVGW3JZKhndE3BG`
-- `ls` : got required file `data.txt`
-- `base64 -d data.txt` : got password `pYfOY6HwUsDj5rL9UvyhU7MCmv8vN5Ro`
-
----
